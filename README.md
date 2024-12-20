@@ -178,3 +178,6 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 
 
 ## RUN SIMILATION IN CODESPACE
+**Step-1**
+
+
