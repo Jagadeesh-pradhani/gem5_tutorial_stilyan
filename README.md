@@ -199,7 +199,7 @@ This will open a codespace in github <br>
 <br>
 
 Lets set up gem5! <br>
-Install dependencies in the terminal, <br>
+- Install dependencies in the terminal, <br>
 (`cd gem5` or `cd /workspaces/gem5_tutorial_stilyan/gem5/`)
 ```
 cd gem5
@@ -209,12 +209,36 @@ pip3 install -r requirements.txt
 sudo apt install m4
 pip3 install scons
 ```
-Build GEM5
+- Build GEM5
 ```
 cd gem5
 scons build/X86/gem5.opt -j$(nproc)
 ```
 
+- RUN SIMULATION <br>
+1. **Hello worl with default configurations**
+```
+cd gem5
+build/X86/gem5.opt configs/deprecated/example/se.py -c tests/test-progs/hello/bin/x86/linux/hello
+```
+2. Custom configuration script
+```
+cd gem5
+build/X86/gem5.opt configs/basics/simple.py 
+```
+
+3. Custom script with multicore
+```
+cd gem5
+build/X86/gem5.opt configs/basics/tcmp.py
+```
+
+4. Ruby based Simulation with custom paramters
+   Modify the python code to set different parameters
+```
+cd gem5
+python3 run_simulation.py
+```
 
 
 
