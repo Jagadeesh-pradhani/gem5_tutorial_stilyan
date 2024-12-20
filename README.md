@@ -216,7 +216,7 @@ scons build/X86/gem5.opt -j$(nproc)
 ```
 
 - RUN SIMULATION <br>
-1. **Hello worl with default configurations**
+1. Hello world with default configurations
 ```
 cd gem5
 build/X86/gem5.opt configs/deprecated/example/se.py -c tests/test-progs/hello/bin/x86/linux/hello
@@ -233,7 +233,7 @@ cd gem5
 build/X86/gem5.opt configs/basics/tcmp.py
 ```
 
-4. Ruby based Simulation with custom paramters
+4. Simulation with custom paramters <br>
    Modify the python code to set different parameters
 ```
 cd gem5
