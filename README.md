@@ -178,8 +178,9 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 
 
 ## RUN SIMILATION IN CODESPACE
-**Step-1**
-![image](https://github.com/user-attachments/assets/8eef0acc-856a-4ffe-a811-da7d31fb9d4d)
+**Step-1** <br>
+![image](https://github.com/user-attachments/assets/90a72eea-5c93-43a4-9c8d-8e9965e2e72d)
+<br>
 Fork the repo
 
 
