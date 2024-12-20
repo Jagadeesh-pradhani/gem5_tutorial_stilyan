@@ -4,12 +4,12 @@ This document provides an overview of the gem5 directory structure to help you n
 
 ## Table of Contents
 
-- [Top-Level Directories](#topleveldirectories)
+- [Top-Level Directories](#top-level-directories)
 
 
 ---
 
-## **Top-Level Directories**
+## **Top Level Directories**
 
 ### `configs`
 - **Purpose**: Contains Python scripts for configuring and running simulations.
