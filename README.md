@@ -4,7 +4,7 @@ This document provides an overview of the gem5 directory structure to help you n
 
 ## Table of Contents
 
-- [Top-Level Directories](#top-level directories)
+- [Top-Level Directories](#topleveldirectories)
 
 
 ---
