@@ -177,3 +177,4 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 | `simerr`     | Standard error during simulation                       |
 
 
+## RUN SIMILATION IN CODESPACE
