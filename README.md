@@ -2,6 +2,11 @@
 
 This document provides an overview of the gem5 directory structure to help you navigate and understand its components.
 
+## Table of Contents
+
+- [Top-Level Directories](#Top-Level Directories)
+
+
 ---
 
 ## **Top-Level Directories**
