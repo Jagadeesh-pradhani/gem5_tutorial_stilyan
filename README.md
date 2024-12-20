@@ -188,6 +188,12 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 
 **Step-3**: Click on codespaces -> 3 dots -> New with Options <br> 
 ![image](https://github.com/user-attachments/assets/3879e114-d8f8-4fb0-ba70-ccc97cb1deca)
+<br>
+
+**Step-4**: Make sure the selected ooptions include 4-core, and then click on create codespace <br>
+![image](https://github.com/user-attachments/assets/638c669a-3e04-4c1e-92c2-32e0235973e0)
+<br>
+
 
 
 
