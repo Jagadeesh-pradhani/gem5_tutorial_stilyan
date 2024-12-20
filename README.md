@@ -46,7 +46,7 @@ sudo apt install m4
 pip3 install scons
 ```
 - Build GEM5 <br>
- This building process wi;; takes around 20-30 mins
+ This building process will take around 20-30 mins
 ```
 cd gem5
 scons build/X86/gem5.opt -j$(nproc)
