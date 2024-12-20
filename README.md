@@ -3,7 +3,7 @@
 This document provides an overview of the gem5 directory structure to help you navigate and understand its components.
 
 ## Table of Contents
-
+- [SIMILATION IN CODESPACE](#SIMILATION-IN-CODESPACE)
 - [Top-Level Directories](#top-level-directories)
 - [Files Summary](#files-summary)
 - [gem5 Simulation Results Analysis Guide](#gem5-simulation-results-analysis-guide)
@@ -11,6 +11,72 @@ This document provides an overview of the gem5 directory structure to help you n
 
 
 ---
+
+## **SIMILATION IN CODESPACE**
+
+**Step-1**: Fork this repo and create a new fork in your github. <br>
+![image](https://github.com/user-attachments/assets/90a72eea-5c93-43a4-9c8d-8e9965e2e72d)
+<br>
+
+**Step-2**: Open the fork and click on `code` <br>
+![image](https://github.com/user-attachments/assets/fad4da55-6e43-4b9d-9fb8-377b586669ef)
+<br>
+
+**Step-3**: Click on codespaces -> 3 dots -> New with Options <br> 
+![image](https://github.com/user-attachments/assets/3879e114-d8f8-4fb0-ba70-ccc97cb1deca)
+<br>
+
+**Step-4**: Make sure the selected ooptions include 4-core, and then click on create codespace <br>
+![image](https://github.com/user-attachments/assets/638c669a-3e04-4c1e-92c2-32e0235973e0)
+<br>
+
+This will open a codespace in github <br>
+![image](https://github.com/user-attachments/assets/6d81ece1-9798-455b-a87c-30b24a284c1c)
+<br>
+
+Lets set up gem5! <br>
+- Install dependencies in the terminal, <br>
+(`cd gem5` or `cd /workspaces/gem5_tutorial_stilyan/gem5/`)
+```
+cd gem5
+sudo apt update
+sudo apt install python3-pip
+pip3 install -r requirements.txt
+sudo apt install m4
+pip3 install scons
+```
+- Build GEM5
+```
+cd gem5
+scons build/X86/gem5.opt -j$(nproc)
+```
+
+- RUN SIMULATION <br>
+1. Hello world with default configurations
+```
+cd gem5
+build/X86/gem5.opt configs/deprecated/example/se.py -c tests/test-progs/hello/bin/x86/linux/hello
+```
+2. Custom configuration script
+```
+cd gem5
+build/X86/gem5.opt configs/basics/simple.py 
+```
+
+3. Custom script with multicore
+```
+cd gem5
+build/X86/gem5.opt configs/basics/tcmp.py
+```
+
+4. Simulation with custom paramters <br>
+   Modify the python code to set different parameters
+```
+cd gem5
+python3 run_simulation.py
+```
+
+
 
 ## **Top Level Directories**
 
@@ -185,68 +251,7 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 | `simerr`     | Standard error during simulation                       |
 
 
-## RUN SIMILATION IN CODESPACE
-**Step-1**: Fork this repo and create a new fork in your github. <br>
-![image](https://github.com/user-attachments/assets/90a72eea-5c93-43a4-9c8d-8e9965e2e72d)
-<br>
 
-**Step-2**: Open the fork and click on `code` <br>
-![image](https://github.com/user-attachments/assets/fad4da55-6e43-4b9d-9fb8-377b586669ef)
-<br>
-
-**Step-3**: Click on codespaces -> 3 dots -> New with Options <br> 
-![image](https://github.com/user-attachments/assets/3879e114-d8f8-4fb0-ba70-ccc97cb1deca)
-<br>
-
-**Step-4**: Make sure the selected ooptions include 4-core, and then click on create codespace <br>
-![image](https://github.com/user-attachments/assets/638c669a-3e04-4c1e-92c2-32e0235973e0)
-<br>
-
-This will open a codespace in github <br>
-![image](https://github.com/user-attachments/assets/6d81ece1-9798-455b-a87c-30b24a284c1c)
-<br>
-
-Lets set up gem5! <br>
-- Install dependencies in the terminal, <br>
-(`cd gem5` or `cd /workspaces/gem5_tutorial_stilyan/gem5/`)
-```
-cd gem5
-sudo apt update
-sudo apt install python3-pip
-pip3 install -r requirements.txt
-sudo apt install m4
-pip3 install scons
-```
-- Build GEM5
-```
-cd gem5
-scons build/X86/gem5.opt -j$(nproc)
-```
-
-- RUN SIMULATION <br>
-1. Hello world with default configurations
-```
-cd gem5
-build/X86/gem5.opt configs/deprecated/example/se.py -c tests/test-progs/hello/bin/x86/linux/hello
-```
-2. Custom configuration script
-```
-cd gem5
-build/X86/gem5.opt configs/basics/simple.py 
-```
-
-3. Custom script with multicore
-```
-cd gem5
-build/X86/gem5.opt configs/basics/tcmp.py
-```
-
-4. Simulation with custom paramters <br>
-   Modify the python code to set different parameters
-```
-cd gem5
-python3 run_simulation.py
-```
 
 
 
