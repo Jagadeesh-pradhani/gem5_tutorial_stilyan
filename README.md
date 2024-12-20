@@ -182,6 +182,9 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 ![image](https://github.com/user-attachments/assets/90a72eea-5c93-43a4-9c8d-8e9965e2e72d)
 <br>
 
+**Step-2**: Open the fork and click on `code` <br>
+![image](https://github.com/user-attachments/assets/fad4da55-6e43-4b9d-9fb8-377b586669ef)
+
 
 
 
