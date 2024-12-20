@@ -42,6 +42,18 @@ l2_wp = "--l2-wb-clean=True"
 maxTick = "-m 500000000"
 warmup = "-W 100000"
 
+#For ruby use following in command
+num_dirs = "--num-dirs=16"
+mesh_rows = "--mesh-rows=4"
+ruby = "--ruby"
+network = "--network=garnet"
+topology = "--topology=Mesh_XY"
+link_latency = "--link-latency=1"
+router_latency = "--router-latency=1"
+
+maxTick = "-m 500000000"
+warmup = "-W 100000"
+
 # Construct the full command
 command = [    
     gem5_binary,
