@@ -5,7 +5,9 @@ This document provides an overview of the gem5 directory structure to help you n
 ## Table of Contents
 
 - [Top-Level Directories](#top-level-directories)
-- [Summary](#summary)
+- [Files Summary](#files-summary)
+- [gem5 Simulation Results Analysis Guide](#gem5-simulation-results-analysis-guide)
+- [Reults Summary](#results-summary)
 
 
 ---
@@ -97,7 +99,7 @@ This document provides an overview of the gem5 directory structure to help you n
 
 ---
 
-## **Summary**
+## **Files Summary**
 
 | Directory         | Purpose                                         |
 |--------------------|-------------------------------------------------|
@@ -117,11 +119,11 @@ This document provides an overview of the gem5 directory structure to help you n
 
 
 
-# gem5 Simulation Results Analysis Guide
+## gem5 Simulation Results Analysis Guide
 
 After running simulations, gem5 produces output files in various formats. Hereâ€™s how to analyze them:
 
-## 1. `stats.txt`
+### 1. `stats.txt`
 - **Purpose**: Contains detailed statistics about the simulation.
 - **Analysis**:
   - Use a text editor or parse it programmatically (e.g., with Python).
@@ -132,7 +134,7 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
   system.cpu.numCycles                       12345678                      # Number of CPU cycles
   ```
 
-## 2. `config.ini`
+### 2. `config.ini`
 - **Purpose**: Stores the system configuration used for the simulation.
 - **Analysis**:
   - Provides a snapshot of the simulated system (CPU type, cache sizes, etc.).
@@ -145,7 +147,7 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
   clock=2GHz
   ```
 
-## 3. `config.json`
+### 3. `config.json`
 - **Purpose**: A JSON version of the system configuration.
 - **Analysis**:
   - Easier to parse programmatically compared to `config.ini`.
@@ -158,13 +160,13 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
       print(config['system']['cpu']['type'])
   ```
 
-## 4. `simout`
+### 4. `simout`
 - **Purpose**: The standard output of the simulation.
 - **Analysis**:
   - Useful for debugging runtime issues or observing simulation progress.
   - Includes events like cache misses, exceptions, or warnings.
 
-## 5. `simerr`
+### 5. `simerr`
 - **Purpose**: The standard error output of the simulation.
 - **Analysis**:
   - Contains error messages or warnings during the simulation.
@@ -172,7 +174,7 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 
 
 
-## Summary
+## Results Summary
 
 | File         | Purpose                                                 |
 |--------------|---------------------------------------------------------|
