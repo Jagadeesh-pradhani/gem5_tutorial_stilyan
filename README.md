@@ -194,6 +194,27 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 ![image](https://github.com/user-attachments/assets/638c669a-3e04-4c1e-92c2-32e0235973e0)
 <br>
 
+This will open a codespace in github <br>
+![image](https://github.com/user-attachments/assets/6d81ece1-9798-455b-a87c-30b24a284c1c)
+<br>
+
+Lets set up gem5! <br>
+Install dependencies in the terminal, <br>
+(`cd gem5` or `cd /workspaces/gem5_tutorial_stilyan/gem5/`)
+```
+cd gem5
+sudo apt update
+sudo apt install python3-pip
+pip3 install -r requirements.txt
+sudo apt install m4
+pip3 install scons
+```
+Build GEM5
+```
+cd gem5
+scons build/X86/gem5.opt -j$(nproc)
+```
+
 
 
 
