@@ -184,7 +184,10 @@ After running simulations, gem5 produces output files in various formats. Hereâ€
 
 **Step-2**: Open the fork and click on `code` <br>
 ![image](https://github.com/user-attachments/assets/fad4da55-6e43-4b9d-9fb8-377b586669ef)
+<br>
 
+**Step-3**: Click on codespaces -> 3 dots -> New with Options <br> 
+![image](https://github.com/user-attachments/assets/3879e114-d8f8-4fb0-ba70-ccc97cb1deca)
 
 
 
