@@ -3,7 +3,7 @@
 This document provides an overview of the gem5 directory structure to help you navigate and understand its components.
 
 ## Table of Contents
-- [SIMILATION IN CODESPACE](#SIMILATION-IN-CODESPACE)
+- [SIMULATION IN CODESPACE](#SIMULATION-IN-CODESPACE)
 - [Top-Level Directories](#top-level-directories)
 - [Files Summary](#files-summary)
 - [gem5 Simulation Results Analysis Guide](#gem5-simulation-results-analysis-guide)
@@ -12,7 +12,7 @@ This document provides an overview of the gem5 directory structure to help you n
 
 ---
 
-## **SIMILATION IN CODESPACE**
+## **SIMULATION IN CODESPACE**
 
 **Step-1**: Fork this repo and create a new fork in your github. <br>
 ![image](https://github.com/user-attachments/assets/90a72eea-5c93-43a4-9c8d-8e9965e2e72d)
